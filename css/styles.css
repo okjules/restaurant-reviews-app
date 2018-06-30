@@ -101,6 +101,24 @@ nav h1 a {
     color: #01447e;
     text-decoration: underline;
 }
+
+/* ====================== Accessibility Link Skip====================== */
+header .skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: orange;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-transform: uppercase;
+}
+
+header .skip-link:focus {
+  top: 0;
+}
+
+
 /* ====================== Map ====================== */
 #map {
   height: 400px;
@@ -160,7 +178,7 @@ nav h1 a {
   max-width: 100%;
   min-height: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -250,15 +268,17 @@ nav h1 a {
 	max-width: 90%;
 }
 #restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
+	display: flex;
+	align-items: center;
+  flex-direction: column;
+  justify-content: center;
+	border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 50px 30px;
   max-width: 100%;
 }
-#reviews-container {
-  padding: 30px 40px 80px;
-}
-#reviews-container h2 {
+
+#reviews-container h3 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
@@ -268,6 +288,9 @@ nav h1 a {
 #reviews-list {
   margin: 0;
   padding: 0;
+	display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #reviews-list li {
   background-color: #fff;
@@ -278,8 +301,9 @@ nav h1 a {
   overflow: hidden;
   padding: 0 20px 20px;
   width: 85%;
+	position: relative;
 }
-#reviews-list li p {
+#reviews-list li time {
   margin: 10px auto 20px;
 }
 #restaurant-hours td {
