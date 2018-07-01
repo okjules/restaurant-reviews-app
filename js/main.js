@@ -217,15 +217,6 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 
 }
 
-/**
- * Add title to the iframe element
- */
-window.addEventListener('load', function () {
-  let iframeEvent = document.querySelector('iframe');
-  iframeEvent.setAttribute('title', 'iframe map');
-  iframeEvent.setAttribute('tabindex', '-1');
-});
-
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map

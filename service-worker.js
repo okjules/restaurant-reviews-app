@@ -3,7 +3,6 @@ self.addEventListener('install', function (event) {
 		caches.open('app-static-v1').then(function (cache) {
 			return cache.addAll([
 				'/',
-				'css/styles.css',
 				'img/1.jpg',
 				'img/2.jpg',
 				'img/3.jpg',
@@ -18,7 +17,8 @@ self.addEventListener('install', function (event) {
 				'js/main.js',
 				'js/restaurant_info.js',
 				'index.html',
-				'restaurant.html'
+				'restaurant.html',
+				'css/styles.css'
 			]);
 		})
 	);

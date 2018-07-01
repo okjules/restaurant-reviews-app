@@ -195,12 +195,3 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
-/**
- * Add a title to the iframe element
-
-window.addEventListener('load', function () {
-  let iframeEvent = document.querySelector('iframe');
-  iframeEvent.setAttribute('title', 'iframe map');
-  iframeEvent.setAttribute('tabindex', '-1');
-}); */
