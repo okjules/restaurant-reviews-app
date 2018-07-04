@@ -242,7 +242,7 @@ header .skip-link:focus {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 300px;
-  position: fixed;
+  position: relative;
   top: 120px;
 	width: 100%
 }
@@ -263,7 +263,7 @@ header .skip-link:focus {
   font-size: 20pt;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 450px 0 30px;
+  margin: 150px 0 30px;
   text-transform: uppercase;
   line-height: 1.1;
 	text-align: center;
@@ -392,9 +392,6 @@ header .skip-link:focus {
 		width: 100%;
 		max-width: 750px;
   	}
-	#restaurant-name {
-	  margin: 400px 0 30px;
-		}
 	#restaurant-img {
 		width: 70%;
 		}
